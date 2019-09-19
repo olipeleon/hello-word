@@ -13,8 +13,10 @@ public class HolaMundo
     try {
       System.out.println("Otra prueba mas");
       throw new Exception();
-    } catch (Exception e) 
+    } 
+    catch (Exception e) 
     {
+      System.out.println("Error en el proceso: " + e.getMessage());
       e.printStackTrace();
     }
   }
